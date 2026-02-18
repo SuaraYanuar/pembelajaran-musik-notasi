@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Notasi Musik</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.0.0/dist/abcjs-basic-min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Musik Notasi" class="logo"> <!-- Tambahan logo -->
+        <h1>Selamat Datang di Pembelajaran Notasi Musik</h1>
+        <p>Pelajari dasar-dasar notasi musik dengan mudah!</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Pengantar</a>
+        <a href="#clefs">Clefs</a>
+        <a href="#notes">Notes</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <section id="intro">
+        <h2>Pengantar Notasi Musik</h2>
+        <p>Notasi musik adalah sistem untuk menulis musik. Ini melibatkan clefs, notes, rests, dan ritme. Mari mulai belajar!</p>
+    </section>
+
+    <section id="clefs">
+        <h2>Clefs (Kunci)</h2>
+        <p>Clefs menentukan tinggi nada. Berikut contoh treble clef (G-clef) dan bass clef (F-clef).</p>
+        <div id="treble-clef"></div>
+        <div id="bass-clef"></div>
+    </section>
+
+    <section id="notes">
+        <h2>Notes (Nada)</h2>
+        <p>Notes mewakili nada. Berikut contoh skala C mayor di treble clef.</p>
+        <div id="c-major-scale"></div>
+        <p>Nama notes: C, D, E, F, G, A, B, C.</p>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz Sederhana</h2>
+        <p>Jawab pertanyaan berikut:</p>
+        <p>Apa nama clef yang digunakan untuk suara tinggi? <input type="text" id="answer1"> <button onclick="checkAnswer('treble', 'answer1')">Cek</button></p>
+        <p id="result1"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Pembelajaran Notasi Musik. Dibuat dengan HTML/CSS/JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
